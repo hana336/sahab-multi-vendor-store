@@ -1,0 +1,11 @@
+*{
+font-style: oblique;
+}
+
+.full-screen {
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 50px gray;
+    padding: 50px;
+
+}

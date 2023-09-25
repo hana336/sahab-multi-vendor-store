@@ -1,0 +1,267 @@
+* {
+    font-family: 'stc';
+    color: rgb(105, 103, 102);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hr-colors{
+    margin: 0px !important;
+    border: none;
+    height: 5px !important;
+    background: linear-gradient(to right, red, yellow, green, blue, purple);
+}
+.navbar{
+    height: 75px;
+}
+
+.container .collapse .navbar-nav .dropdown-menu a{
+    font-weight: bold;
+    cursor: pointer;
+    text-align: right;
+    font: 14px;
+}
+.container .navbar img{
+    width: 140px;
+}
+
+.items::-webkit-scrollbar,.categories-block .items::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+    height: 10px;
+}
+
+.items::-webkit-scrollbar-thumb,.categories-block .items::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #4182c3), color-stop(0.72,#4182c3), color-stop(0.86,#4182c3));
+}
+
+.items::-webkit-scrollbar-track, .categories .categories-block .items::-webkit-scrollbar-track {
+    -webkit-bos-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: white;
+    border-radius: 8px;
+}
+.section-search .container .categories-block .item {
+    text-align: center;
+    display: inline-block;
+    width: 110px;
+    position: relative;
+    height: 115px;
+}
+
+.section-search .container .categories-block .items{
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 5px;
+    
+}
+.section-search .container .categories-block .items a{
+    
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.section-search .container .categories-block .items img{
+    width: 75px;
+    display: block;
+    box-shadow: 0px 4px 3px -2px gray;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: none;
+}
+.section-search .container .categories-block .items label {
+    font-size: 12px;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-search .search-block {
+    background-color: rgb(65, 130, 195);
+    padding-top: 7px;
+    padding-bottom: 1px;
+}
+
+.section-search .search-block .form-group {
+    margin-bottom: 7px !important;
+}
+
+.section-search .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    margin-top: 7px;
+}
+
+.fa {
+    font-weight: 900;
+}
+
+.section-search .has-search .form-control {
+    padding-right: 2.375rem;
+    height: 50px;
+    border: none;
+}
+
+.section-search .products-block .filters .dropdown .dropdown-toggle {
+    margin-right: 5px;
+    border-color: #ced4da;
+    background-color: transparent;
+}
+
+.section-search #filter_price_from_to {
+    border-right: solid 3px;
+    padding-right: 3%;
+    margin-right: 2%;
+}
+
+.section-search #filter_price_from_to .span-filter-price-from-to {
+    display: flex;
+}
+
+.section-search #filter_price_from_to .to {
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.section-search .products-block .filters .number-items {
+    position: absolute;
+    left: 0;
+}
+.section-search .products-block .card-product {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 1px 0px 0px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.section-search .products-block .card-product .image {
+    width: 203px;
+    height: 135px;
+    background-color: #f9f7f6;
+    border-radius: 8px;
+}
+
+.section-search .products-block .card-product .image .img {
+    border-radius: 8px;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.section-search .products-block .card-product .wishlist {
+    position: absolute;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.section-search .products-block .card-product .category-name, .section-search .products-block .card-product .parent-category-name {
+    font-size: 15px;
+    color: rgb(105, 103, 102);
+}
+
+.section-search .products-block .card-product .item-name {
+    color: rgb(54, 52, 51);
+    text-decoration-color: rgb(54, 52, 51);
+    font-size: 17px;
+}
+
+.section-search .products-block .card-product .description {
+    font-size: 14px;
+    color: rgb(105, 103, 102);
+}
+
+#items_search .card-product .price {
+    background-color: #f9f7f6;
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: rgb(54, 52, 51);
+}
+
+.section-search .advertising-home img {
+    border-radius: 2px;
+}
+
+.simple-pagination {
+    display: block;
+    overflow: hidden;
+    padding: 0 5px 5px 0;
+    margin: 0;
+}
+
+.section-search .advertising-items {
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 1px 0px 0px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.section-search .advertising-items .items .item {
+    display: block;
+    border-bottom: 1px solid rgb(239, 239, 239);
+    padding: 16px 0px 4px;
+}
+
+.section-search .advertising-items .items .item .details {
+    padding: 8px 0px;
+}
+
+.section-search .advertising-items .items .item .details .price{
+    color: rgb(54, 52, 51);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.section-search .advertising-items .items .item .details .original-price {
+    margin-right: 10px;
+}
+
+.section-search .advertising-items .items .item .details .original-price del {
+    color: rgb(54, 52, 51);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 26px;
+}
+a {
+    text-decoration: none !important;
+}
+

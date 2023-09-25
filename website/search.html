@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أكورد| صفحة البحث</title>
+    <link rel="stylesheet" href="style5.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .hr-top-header {
+        margin-bottom: 0;
+        border: none;
+      }
+      #pagination-container-search-items .prev,
+      #pagination-container-search-items .next {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <hr class="hr-colors" />
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="d-inline align-middle" href="">
+            <img src="accord-logo.png" width="100" alt="" />
+          </a>
+          <div class="collapse navbar-collapse display-8 ml-auto mt-2">
+            <div class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <ul>
+                <a
+                  class="dropdown-toggle text-decoration-none me-5 text-dark"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  التصنيفات
+                </a>
+                <div class="dropdown-menu col-md-12 text-end">
+                  <div>                              
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" href="#">الأثاث المنزلي</a>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" href="#">الأجهزة الكهربائية</a>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" href="#">صالات الافراح</a>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" href="#">بدل الزفاف</a>
+                    <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <a class="dropdown-item child" href="#"> ملحقات</a>
+                            </div>
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href="#">بدل فرح</a>
+                        </div>
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href="#"
+                            >بدل خطوبة و حنة
+                          </a>
+                        </div>
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href=""
+                            >فساتين سهرة
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                      <a class="dropdown-item col-md-3" href="#">الكوافيرات</a>
+                      <div class="col-md-12">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <a class="dropdown-item child" href="#">خطوبة/حنة</a>
+                                </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">عروسة</a>
+                            </div>
+                          </div>
+                        </div>
+                  </li>                
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" id="" href="#">بطاقات الأفراح</a>
+                    <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">دعوات ثانوية</a>
+                            </div>
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href="#">دعوات فرح</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" id="" href="#">تزيين الورود</a>
+                    <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#"> تزيين أماكن أفراح</a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#"
+                              >مسكة العروسة  
+                            </a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href=""
+                              > تزيين سيارات
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" id="" href="#">تأجير الباصات</a>
+                    <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#">باص 25 راكب</a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#"
+                              >باص 25 راكب   
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" id="" href="#">استوديوهات التصوير</a>
+                    <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#">تصوير فيديو</a>
+                          </div>
+                          <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">تصوير فوتو داخلي</a>
+                            </div>                      
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href="#">تصوير فوتو خارجي</a>
+                        </div>
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href="#">الملحقات</a>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                      <a class="dropdown-item col-md-3" id="" href="#">المطابخ</a>
+                      <div class="col-md-12">
+                          <div class="row">
+                              <div class="col-md-4">
+                                <a class="dropdown-item child" href="#">وجبة أرز</a>
+                              </div>
+                              <div class="col-md-4">
+                                  <a class="dropdown-item child" href="#">صينية أرز مع لحم</a>
+                                </div>                      
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">صينية أرز مع دجاج</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">المشروبات</a>
+                            </div>
+                        </div>
+                  </li>
+                  <li class="col-md-12">
+                      <a class="dropdown-item col-md-3" id="" href="#">الفنادق</a>
+                      <div class="col-md-12">
+                          <div class="row">
+                              <div class="col-md-4">
+                                <a class="dropdown-item child" href="#">غرفة فندقية</a>
+                              </div>
+                        </div>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" id="" href="#">فنون استعراضية</a>
+                    <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#"> فدعوس</a>
+                          </div>                        
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                      <a class="dropdown-item col-md-3" id="" href="#">المسارح</a>
+                      <div class="col-md-12">
+                          <div class="row">
+                              <div class="col-md-4">
+                                <a class="dropdown-item child" href="#">خدمات ضيافة</a>
+                              </div>
+                              <div class="col-md-4">
+                                  <a class="dropdown-item child" href="#"> حفلة شباب</a>
+                                </div>                      
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#"> حفلة دحية</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">صوان فرح نساء</a>
+                            </div>
+                        </div>
+                  </li>
+                  <li class="col-md-12">
+                      <a class="dropdown-item col-md-3" id="" href="#">بدل رجالي</a>
+                      <div class="row">
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#">بدلة عريس مستوردة</a>
+                          </div>
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" id="" href="#">حلويات الأفراح</a>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a class="dropdown-item child" href="#">كيك أفراح </a>
+                      </div>
+                      <div class="col-md-4">
+                          <a class="dropdown-item child" href="#"> قطع و حلويات </a>
+                        </div>
+                </div>
+                  </li>
+                  <li class="col-md-12">
+                      <a class="dropdown-item col-md-3" id="" href="#">مفروشات</a>
+                      <div class="row">
+                          <div class="col-md-4">
+                            <a class="dropdown-item child" href="#">روب حمام</a>
+                          </div>
+                          <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">بشاكير ومناشف</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">شراشف طاولة</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">مخدات</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">ملايات</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">شراشف سرير</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">لحافات نفخ</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">شراشف عروسة</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">تجميل</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">عناية بالبشرة</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">مستلزمات أخرى</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">وجوه مخدات</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">دعاسات</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">سجاد</a>
+                            </div>
+                            <div class="col-md-4">
+                              <a class="dropdown-item child" href="#">ستائر</a>
+                            </div>
+                          <div class="col-md-4">
+                              <a class="dropdown-item child" href="#"> تحف و أنتيكا</a>
+                            </div>                      
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href="#">أثاث و اكسسوار منزلي</a>
+                        </div>
+                        <div class="col-md-4">
+                          <a class="dropdown-item child" href="#">ملابس داخلية</a>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="col-md-12">
+                    <a class="dropdown-item col-md-3" id="" href="#">أدوات منزلية</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+  
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="nav-item">
+                <button type="submit" class="btn btn-success btn-sm">
+                  <span><i class="bi bi-plus-circle"></i></span>
+                  سجل كمورد
+                </button>
+                <i class="icofont-plus-circle"></i>
+              </div>
+              <div class="nav-item">
+                <i class="bi bi-search"></i>
+                <a class="nav-link " href="#">البحث</a>
+              </div>
+              <div class="nav-item">
+                <span class="badge bg-primary rounded-circle">0</span>
+                <i class="bi bi-heart"></i>
+                <a class="nav-link" href="#">المفضلة</a>
+              </div>
+              <div class="nav-item">
+                <span class="badge bg-primary rounded-circle">0</span>
+                <i class="bi bi-cart"></i>
+                <a class="nav-link" href="#">سلة المشتريات</a>
+              </div>
+              <div class="nav-item">
+                <i class="bi bi-person-circle bg-light"></i>
+                <a class="nav-link" href="#">تسجيل الدخول</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <div class="section-search text-right">
+        <div class="search-block">
+            <div class="container mw-1140 ps-15 pe-15">
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback">
+                        <i class="icofont-search"></i>
+                    </span>
+                    <input type="text" class="form-control " placeholder="البحث ....">
+                </div>
+            </div>
+        </div>
+        <div class="container pr-0 pl-0">
+            <div class="categories-block">
+                <div class="items d-sm-block">
+                  <div class="item">
+                    <a href="">
+                      <img
+                        class="text-right"
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c0.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">الأثاث المنزلي</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c1.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">لأجهزة الكهربائية</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c2.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">صالات الأفراح</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c3.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">بدل الزفاف</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c4.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">الكوافيرات</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c5.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">بطاقات الأفراح</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c6.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">تزيين الورود</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c7.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">تأجير الباصات</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c8.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">استوديوهات التصوير</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c9.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">المطابخ</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c10.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">الفنادق</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c11.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">فنون استعراضية</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c12.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">المسارح</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c13.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">بدل رجالي</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c14.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">حلويات الأفراح</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c15.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">مفروشات</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories/c16.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">أدوات منزلية</label>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="">
+                      <img
+                        src="https://accord.ps/Modules/Website/Resources/assets/images/categories.png"
+                        alt=""
+                      />
+                      <label class="d-inline m-b-2">كل التصنيفات</label>
+                    </a>
+                  </div>
+                </div>              
+        </div>
+        </div>
+        <div class="container mb-3">
+        <hr class="mt-1 mb-1">
+        </div>
+        <div class="advertising-search">
+        <div class="container">
+            <a href="#">
+                <img class="advertising-1" src="adv-search1.jpg" alt="">
+            </a>
+            <a href="#">
+                <img class="advertising-2 d-none" src="adv-search2.jpg" alt="">
+            </a>
+            <a href="#">
+                <img class="advertising-2 d-none" src="adv-search2.jpg" alt="">
+            </a>
+            <a href="#">
+                <img class="advertising-3 d-none" src="adv-search3.jpg" alt="">
+            </a>
+            <a href="#">
+                <img class="advertising-4 d-none" src="adv-search4.jpg" alt="">
+            </a>
+            <a href="#">
+                <img class="advertising-5 d-none" src="adv-search5.jpg" alt="">
+            </a>
+        </div>
+        </div>
+        <div class="products-block pb-5 mt-4">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-9 pr-0 pl-0">
+                            <div class="filters d-flex pt-3 pb-1">
+                                <span id="text-order-search">الترتيب حسب </span>
+                                <span id="filters-items-value"></span>
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                    <div class="dropdown-menu text-right" aria-labelledby="dropdownMenuButton" style="width: 185px" id="filters_items">
+                                        <a class="dropdown-item" id="price_asc">الأقل سعراً</a>
+                                        <a class="dropdown-item" id="price_desc">الأعلى سعراً</a>
+                                        <a class="dropdown-item" id="most_discount">الأكثر خصومات</a>
+                                        <a class="dropdown-item" id="item_desc">الأحدث</a>
+                                        <a class="dropdown-item" id="item_asc">الأقدم</a>
+                                    </div>
+                                </div>
+                                
+                                <div id="filter_price_from_to">
+                                    <div class="form-group from-to mb-1">
+                                        <span class="span-filter-price-from-to">
+                                            <input class="form-control" type="number" name="less_price" id="less_price" placeholder="الأقل سعراً" autocomplete="off">
+                                            <span class="to">إلى</span>
+                                            <input class="form-control" type="number" name="large_price" id="large_price" placeholder="الأعلى سعراً" autocomplete="off">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="number-items" id="total_number_items">4277 صنف</div>
+                            </div>  
+                            <div class="items" id="items_search">
+                                <div >
+                                    <div class="item">
+                                        <div class="card-product d-flex">
+                                            <a href="#" class="position-relative" >
+                                                <div class="image">
+                                                    <div class="img" data-source="image" style="background-image: url(&quot;https://accordpal.com/storage/app/public/6960/conversions/83098745_865228797320320_8855934933935370518_o-thumb.jpg&quot;);"></div>
+                                                </div>
+                                            </a>
+                                            <div class="product-details pr-3">
+                                                <label class="wishlist" >
+                                                    <svg viewBox="0 0 32 32" color="#696766" width="30" height="30"></svg>
+                                                </label>
+                                                <a href="#" class="a-parent-category-name">
+                                                    <span class="parent-category-name">صالات الأفراح</span>
+                                                </a>
+                                                <span class="space-between-categories"> - </span>
+                                                <a href="#" class="a-category-name">
+                                                    <span class="category-name">قاعة أفراح</span>
+                                                </a>
+                                                <div class="d-flex mt-2">
+                                                    <a href="#" class="a-item-name">
+                                                        <h4 class="item-name ml-2">صالة اللوتس</h4>
+                                                        <h6 style="font-size: 14px" class="text-muted d-none"></h6>
+                                                    </a>
+                                                                                                        <h6 style="cursor: pointer"> ( صالة اللوتس للأفراح ) </h6>
+                                                                                                </div>
+                                                <p class="description">
+                                                    <span>من شهر 11 </span>
+                                                    <span>إلى شهر 4، </span>
+                                                    <span>غزة، </span>
+                                                    <span>مكيَف، </span>
+                                                    <span>600 كرسي، </span>
+                                                    <span>68 طاولة</span>
+                                                </p>
+                                                <div class="">
+                                                    <span class="price">₪4605</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="item-adverting">
+                                            <div class="advertising-home mb-2">
+                                                <img class="d-none d-sm-block" src="a1.jpg">
+                                                <img class="d-block d-sm-none" src="a2.jpg">
+                                            </div>
+                                        </div>
+                                    <div class="item">
+                                        <div class="card-product d-flex">
+                                            <a href="#" class="position-relative">
+                                                <div class="image">
+                                                    <div class="img" style="background-image: url(pi1.jpg);"></div>
+                                                </div>
+                                            </a>
+                                            <div class="product-details pr-3">
+                                                <label class="wishlist">
+                                                    <svg viewBox="0 0 32 32" color="#696766" width="30" height="30"></svg>
+                                                </label>
+                                                <a href="#" class="a-parent-category-name">
+                                                    <span class="parent-category-name">الكوافيرات</span>
+                                                </a>
+                                                <span class="space-between-categories"> - </span>
+                                                <a href="#" class="a-category-name">
+                                                    <span class="category-name">عروسة</span>
+                                                </a>
+                                                <div class="d-flex mt-2">
+                                                    <a href="#" class="a-item-name">
+                                                        <h4 class="item-name ml-2">باقة - 7 خدمات</h4>
+                                                        <h6 style="font-size: 14px" class="text-muted d-none"></h6>
+                                                    </a>
+                                                                                                        <h6 style="cursor: pointer"> ( كوافير قطرات الندى ) </h6>
+                                                                                                </div>
+                                                <p class="description">
+                                                    <span>مكياج، </span>
+                                                    <span>تسريحة شعر، </span>
+                                                    <span>دهن جسم، </span>
+                                                    <span>مناكير، </span>
+                                                    <span>تنظيف بشرة، </span>
+                                                    <span>صبغة لون واحد، </span>
+                                                    <span>سشوار</span>
+                                                </p>
+                                                <div>
+                                                    <span class="price">₪404</span>
+                                                    <span class="discount-original-price">
+                                                        <span class="discount">%10.2</span>
+                                                        <span class="original-price">₪450</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                <div class="item-adverting">
+                                            <div class="advertising-wedding mb-2">
+                                                <img class="d-none d-sm-block" src="a3.jpg">
+                                                <img class="d-block d-sm-none" src="a4.jpg">
+                                            </div>
+                                        </div>
+                                    <div class="item">
+                                        <div class="card-product d-flex">
+                                            <a href="#" class="position-relative">
+                                                <div class="image">
+                                                    <div class="img" style="background-image: url(&quot;https://accordpal.com/storage/app/public/18782/conversions/42d26734efb0129ab315edc552def108-thumb.jpg&quot;);"></div>
+                                                </div>
+                                            </a>
+                                            <div class="product-details pr-3">
+                                                <label class="wishlist">
+                                                    <svg viewBox="0 0 32 32" color="#696766" width="30" height="30"></svg>
+                                                </label>
+                                                <a href="#" class="a-parent-category-name">
+                                                    <span class="parent-category-name" >بدل الزفاف</span>
+                                                </a>
+                                                <span class="space-between-categories"> - </span>
+                                                <a href="#" class="a-category-name">
+                                                    <span class="category-name" >بدل فرح</span>
+                                                </a>
+                                                <div class="d-flex mt-2">
+                                                    <a href="#" class="a-item-name">
+                                                        <h4 class="item-name ml-2">2021006</h4>
+                                                        <h6 style="font-size: 14px" class="text-muted d-none"></h6>
+                                                    </a>
+                                                                                                        <h6 style="cursor: pointer"> ( سنتر ميرال ) </h6>
+                                                                                                </div>
+                                                <p class="description">تركية , ابيض , كتف دلع , تنورة مرسم</p>
+                                                <div class="">
+                                                    <span class="price">₪1699</span>
+                                                    <span class="discount-original-price">
+                                                        <span class="discount" >%5.6</span>
+                                                        <span class="original-price"><del>₪1800</del></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                             
+                                </div>
+    
+                                <div id="total_items" class="text-left mb-2">تم عرض 50 صنف من 4277 صنف</div>
+    
+                                <div id="pagination_container_search_items" class="light-theme simple-pagination">
+                                    <ul>
+                                        <li class="disabled"><span class="current prev">«</span></li>
+                                        <li class="active"><span class="current">1</span></li>
+                                        <li><a href="#page-2" class="page-link">2</a></li>
+                                        <li><a href="#page-3" class="page-link">3</a></li>
+                                        <li><a href="#page-4" class="page-link">4</a></li>
+                                        <li><a href="#page-5" class="page-link">5</a></li>
+                                        <li class=""><span class="ellipse clickable">…</span></li>
+                                        <li><a href="#page-85" class="page-link">85</a></li>
+                                        <li><a href="#page-86" class="page-link">86</a></li>
+                                        <li><a href="#page-2" class="page-link next">»</a></li>
+                                    </ul>
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="col-md-3 pt-3 pb-3 pl-0">
+                            <div class="advertising-items" id="first_advertisings_search_page">
+                                <div class="items">
+                                    <div class="item">
+                                        <a href="#">
+                                            <div class="image position-relative">
+                                                <div class="img" style="background-image: url(&quot;https://accordpal.com/storage/app/public/29810/conversions/7db108b78439315a53c31d89dabbb8a2-thumb.jpg&quot;);"></div>
+                                            </div>
+                                            </a>
+                                            <div class="details">
+                                                <a href="#">
+                                                <div class="name">طاولة وسط_20026</div>
+                                                </a>
+                                                <div class="d-flex">
+                                                    <div class="price">₪1636</div>
+                                                    <div class="original-price">
+                                                        <del>₪1800</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="advertising-items-small d-none d-sm-block" id="second_advertisings_search_page">
+                                <div class="text-center pt-1 pb-2" id="supplier_name_of_advertising">شركة آت هوم للأثاث العصري</div>
+                                <div class="items" items="">
+                                    <div class="item" item="">
+                                        <a class="d-flex" href="https://accord.ps/products/15959" data-source="item_id" data-id="15959">
+                                            <div class="image">
+                                                <div data-source="image" class="img position-relative" style="background-image: url(&quot;https://accordpal.com/storage/app/public/31413/conversions/ab0bc4b9440562bfaf2b1049b1aa5dda-thumb.jpg&quot;);">
+                                                    <div class="out-of-stock d-none" data-source="out_of_stock">
+                                                        <span>
+                                                            انتهت الكمية
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <div class="d-flex">
+                                                    <div data-source="price" class="price">₪3900</div>
+                                                    <div class="original-price">
+                                                        <del data-source="original_price">₪4200</del>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="name" data-source="item_name">غرفة نوم اسطنبول - 2010058</div>
+                                                <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث العصري ) </div>
+                                            </div>
+                                        </a>
+                                        <div class="description" data-source="description"><span>ساندويش + mdf، </span><span>محلي، </span><span>قشرة زان، </span><span>6 قطعة</span></div>
+                                    </div>
+                                    <hr class="mt-1 mb-1">
+                                
+                                    <div class="item" item="">
+                                        <a class="d-flex" href="https://accord.ps/products/15682" data-source="item_id" data-id="15682">
+                                            <div class="image">
+                                                <div data-source="image" class="img position-relative" style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                                    <div class="out-of-stock d-none" data-source="out_of_stock">
+                                                        <span>
+                                                            انتهت الكمية
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <div class="d-flex">
+                                                    <div data-source="price" class="price">₪181</div>
+                                                    <div class="original-price">
+                                                        <del data-source="original_price">₪200</del>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="name" data-source="item_name">ساعة_100183</div>
+                                                <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث العصري ) </div>
+                                            </div>
+                                        </a>
+                                        <div class="description" data-source="description"></div>
+                                    </div>
+                                    <hr class="mt-1 mb-1">
+                                
+                                    <div class="item" item="">
+                                        <a class="d-flex" href="https://accord.ps/products/15681" data-source="item_id" data-id="15681">
+                                            <div class="image">
+                                                <div data-source="image" class="img position-relative" style="background-image: url(&quot;https://accordpal.com/storage/app/public/31034/conversions/dd6522ad36eeab086e9cb0b31a94847c-thumb.jpg&quot;);">
+                                                    <div class="out-of-stock d-none" data-source="out_of_stock">
+                                                        <span>
+                                                            انتهت الكمية
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <div class="d-flex">
+                                                    <div data-source="price" class="price">₪137</div>
+                                                    <div class="original-price">
+                                                        <del data-source="original_price">₪150</del>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="name" data-source="item_name">كرسي سفرة_30009</div>
+                                                <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث العصري ) </div>
+                                            </div>
+                                        </a>
+                                        <div class="description" data-source="description"></div>
+                                    </div>
+                                    <hr class="mt-1 mb-1">
+                                
+                                    <div class="item" item="">
+                                        <a class="d-flex" href="https://accord.ps/products/15680" data-source="item_id" data-id="15680">
+                                            <div class="image">
+                                                <div data-source="image" class="img position-relative" style="background-image: url(&quot;https://accordpal.com/storage/app/public/31033/conversions/49550fe42bb851707293c62ff49e3b74-thumb.jpg&quot;);">
+                                                    <div class="out-of-stock d-none" data-source="out_of_stock">
+                                                        <span>
+                                                            انتهت الكمية
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <div class="d-flex">
+                                                    <div data-source="price" class="price">₪91</div>
+                                                    <div class="original-price">
+                                                        <del data-source="original_price">₪100</del>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="name" data-source="item_name">كرسي سفرة_30006</div>
+                                                <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث العصري ) </div>
+                                            </div>
+                                        </a>
+                                        <div class="description" data-source="description"></div>
+                                    </div>
+                                    <hr class="mt-1 mb-1">
+                                </div>
+                            </div>
+    
+                            <img class="adv-call-center" src="https://accord.ps/Modules/Website/Resources/assets/images/adv-callcenter.jpg?vid=2021120901" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

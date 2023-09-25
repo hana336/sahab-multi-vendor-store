@@ -1,0 +1,317 @@
+* {
+    font-family: 'stc';
+    color: rgb(105, 103, 102);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hr-colors{
+    margin: 0px !important;
+    border: none;
+    height: 5px !important;
+    background: linear-gradient(to right, red, yellow, green, blue, purple);
+}
+
+.navbar{
+    height: 75px;
+}
+
+.card{
+    margin-left: 120px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.card .card-text{
+    font-size: 13px;
+}
+.container .collapse .navbar-nav .dropdown-menu a{
+    font-weight: bold;
+    cursor: pointer;
+    text-align: right;
+    font: 14px;
+}
+.container .navbar img{
+    width: 140px;
+}
+.categories .container .title-section{
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(54, 52, 51);
+
+}
+
+.categories .container .title-categories{
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.items::-webkit-scrollbar,.categories-block .items::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+    height: 10px;
+}
+
+.items::-webkit-scrollbar-thumb,.categories-block .items::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #4182c3), color-stop(0.72,#4182c3), color-stop(0.86,#4182c3));
+}
+
+.items::-webkit-scrollbar-track, .categories .categories-block .items::-webkit-scrollbar-track {
+    -webkit-bos-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: white;
+    border-radius: 8px;
+}
+.categories .container .categories-block .item {
+    text-align: center;
+    display: inline-block;
+    width: 110px;
+    position: relative;
+    height: 115px;
+}
+
+.categories .container .categories-block .items{
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 5px;
+    
+}
+.categories .container .categories-block .items a{
+    
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.categories .container .categories-block .items img{
+    width: 75px;
+    display: block;
+    box-shadow: 0px 4px 3px -2px gray;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: none;
+}
+.categories .container .categories-block .items label {
+    font-size: 12px;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adv {
+    background-color: #f9f7f6;
+}
+
+.adv .card{
+    border: none;
+    box-shadow: rgb(0,0,0/25%) 0px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.adv2{
+    background-color: #f9f7f6;
+}
+
+.adv2 img{
+    height: 242px;
+    border-radius: 4px;
+}
+
+.site__footer{
+    text-align: right;
+    color: rgb(105, 103, 102);
+}
+
+.colors{
+    border: none;
+    height: 10px !important;
+    background: linear-gradient(to right, red, yellow, green, blue, purple);
+}
+
+.site__footer .footer-contacts__title {
+    color: rgb(54,52,51);
+}
+
+.site__footer .footer-links__title{
+    color: rgb(54,52,51);
+}
+
+.site__footer .footer-newsletter__title{
+    color: rgb(54,52,51);
+}
+
+.footer-contacts__contacts {
+    margin: 24px -15px 0;
+}
+
+.footer-contacts__contacts {
+    font-size: 14px;
+    line-height: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-contacts__contacts dl {
+    width: calc(100% / 2 - 30px - 1px);
+    margin: 0 15px;
+}
+
+.footer-contacts__contacts dt {
+    font-size: 12px;    
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.footer-contacts__contacts dd {
+    font-weight: 400;
+    margin: 0;
+}
+
+.site__footer .footer-links__title, .site__footer .footer-links__title{
+    color: rgb(54, 52, 51);
+    font-size: 1.25rem;
+}
+
+.footer-links__list {
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links__list a {
+    color: inherit;
+    transition: .15s;
+}
+
+.footer-links__list .footer-links__item {
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+.footer-newsletter__text {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 14px;
+}
+
+.footer-newsletter__form {
+    display: flex;
+    max-width: 380px;
+    margin-top: 0em;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+[dir=rtl] .footer-newsletter__form-button {
+    margin-right: 8px;
+}
+
+.footer-newsletter__form-button {
+    background: #7e57c6;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: none;
+    padding: 0 20px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: background .2s, color .2s;
+    color: #fff;
+}
+
+.footer-newsletter__text--social {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.footer-newsletter__social-links {
+    margin-top: 8px;
+}
+
+.social-links__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: -4px;
+}
+
+.social-links__item {
+    margin: 4px;
+}
+
+.social-links__item--facebook a {
+    background: #3c5a99;
+    color: #fff ;
+}
+
+.social-links__item a {
+    font-size: 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    transition: all .2s;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.social-links__item--instagram a i,  .social-links__item--facebook a i {
+    color: white !important;
+}
+
+.social-links__item--instagram a {
+    background: #815dc7;
+    color: #fff;
+}
+
+.social-links__item--instagram a i {
+    color: white !important;
+}
